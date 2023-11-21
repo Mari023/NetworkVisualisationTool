@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "netvistool",
+	"version": "${version}",
+	"name": "NetworkVisualizationTool",
+	"description": "Adds a Network Visualization Tool for AE2",
+	"authors": ["mari_023"],
+	"contact": {
+		"sources": "https://github.com/Mari023/NetworkVisualisationTool",
+		"issues": "https://github.com/Mari023/NetworkVisualisationTool/issues"
+	},
+	"license": "MIT",
+	"icon": "icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"ae2:client": ["de.mari_023.netvistool.client.NetworkVisualisationToolClient"],
+		"ae2": ["de.mari_023.netvistool.NetworkVisualisationToolEntrypoint"]
+	},
+	"mixins": [
+		"netvistool.mixins.json"
+	],
+	"depends": {
+		"fabric": "*",
+		"minecraft": "*",
+		"ae2": ">=${ae2_version}"
+	}
+}
